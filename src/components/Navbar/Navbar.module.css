@@ -1,0 +1,73 @@
+.container{
+    height: 60px;
+    margin-bottom: 10px;
+    
+ 
+}
+.wrapper{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+ span{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.SearchCointainer{
+    border: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+}
+input{
+    border: none;
+}
+.center{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.lists{
+    
+    margin: 10px;
+}
+.right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer 
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
