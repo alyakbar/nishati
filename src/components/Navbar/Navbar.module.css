@@ -40,23 +40,34 @@ input{
 }
 .lists{
     
-    margin: 10px;
+    margin: 0px 30px;
+    align-self: center;
+    justify-content: center;
 }
 .right{
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end; 
+ 
     
 }
 
 button{
     padding: 10px;
-    margin: 10px;
+    
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 15px;
     background-color: transparent;
     cursor: pointer 
+}
+
+.item{
+    align-items: center;
+    size: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
 }
 .close {
     color: #aaaaaa;

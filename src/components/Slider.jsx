@@ -1,11 +1,10 @@
-import React from 'react'
-// import css from './Slider.module.css'
-import ArrowCircleRightTwoToneIcon from '@mui/icons-material/ArrowCircleRightTwoTone';
-import ArrowCircleLeftTwoToneIcon from '@mui/icons-material/ArrowCircleLeftTwoTone';
+
 import { useState } from "react";
 import styled from "styled-components";
-import { sliderItems } from "../MockData";
-// import { mobile } from "../responsive";
+import { sliderItems } from "../data";
+import { mobile } from "../responsive";
+import ArrowCircleRightTwoToneIcon from '@mui/icons-material/ArrowCircleRightTwoTone';
+import ArrowCircleLeftTwoToneIcon from '@mui/icons-material/ArrowCircleLeftTwoTone';
 
 const Container = styled.div`
   width: 100%;
@@ -13,13 +12,13 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  
+  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-
+  background-color: #fff7f7;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -47,7 +46,7 @@ const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  
+  background-color: #${(props) => props.bg};
 `;
 
 const ImgContainer = styled.div`
@@ -95,7 +94,7 @@ const Slider = () => {
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
-      <ArrowCircleLeftTwoToneIcon/>
+        <ArrowCircleLeftTwoToneIcon />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
@@ -112,7 +111,7 @@ const Slider = () => {
         ))}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right")}>
-      <ArrowCircleRightTwoToneIcon/>
+        <ArrowCircleRightTwoToneIcon />
       </Arrow>
     </Container>
   );

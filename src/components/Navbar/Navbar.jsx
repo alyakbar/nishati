@@ -1,7 +1,9 @@
 import React from 'react'
 import css from './Navbar.module.css'
-// import MenuOpenRoundedIcon from '@mui/icons-material/MenuOpenRounded';
-// import SearchIcon from '@mui/icons-material/Search';
+import MenuOpenRoundedIcon from '@mui/icons-material/MenuOpenRounded';
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBagTwoToneIcon from '@mui/icons-material/ShoppingBagTwoTone';
+
 
 
 
@@ -46,20 +48,20 @@ const Navbar = () => {
               <div className={css.SearchContainer}>
                 <input type="text"placeholder='Search' />
                
-                {/* <SearchIcon/> */}
+                <SearchIcon/>
               </div>
               </div>           
         
         </div>
             <div className={css.right}>
-              <div className="item">
+              <div className={css.item}>
               <button>connect +</button>
               </div>             
-              <div className="item">
-              <button>connect +</button>
+              <div className={css.item}>
+              <ShoppingBagTwoToneIcon />
               </div>             
-              <div className="item">
-                {/* <MenuOpenRoundedIcon/> */}
+              <div className={css.item}>
+                <MenuOpenRoundedIcon/>
               </div>             
         
         </div>
