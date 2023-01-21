@@ -1,6 +1,6 @@
 
 import styled from "styled-components";
-import ShoppingBagTwoToneIcon from '@mui/icons-material/ShoppingBagTwoTone';
+
 
 
 const Info = styled.div`
@@ -64,7 +64,7 @@ const Product = ({ item }) => {
       <Image src={item.img} />
       <Info>
 <Icon>
-<ShoppingBagTwoToneIcon/>
+<button> buy</button>
 </Icon>
       </Info>
     </Container>
