@@ -8,14 +8,25 @@ const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
 `;
+const Title1 = styled.h1`
+
+justify-content: center;
+display: flex;
+    margin-bottom: 20px;
+`;
+
 
 const Products = () => {
   return (
+    <div>
+      <Title1>Products</Title1>
     <Container>
+       
       {popularProducts.map((item) => (
         <Product item={item} key={item.id} />
       ))}
     </Container>
+    </div>
   );
 };
 

@@ -12,6 +12,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+  background-color: #E8FADD;
   ${mobile({ display: "none" })}
 `;
 
@@ -52,6 +53,7 @@ const Slide = styled.div`
 const ImgContainer = styled.div`
   height: 100%;
   flex: 1;
+  background-color: #E8FADD;
 `;
 
 const Image = styled.img`
@@ -60,7 +62,9 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
   flex: 1;
+  height: 100%;
   padding: 50px;
+  background-color: #E8FADD;
 `;
 
 const Title = styled.h1`

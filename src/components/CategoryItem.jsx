@@ -28,7 +28,7 @@ const Info = styled.div`
   justify-content: center;
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
     color:white;
     margin-bottom: 20px;
 `;
@@ -45,6 +45,7 @@ const Button = styled.button`
 const CategoryItem = ({ item }) => {
   return (
     <Container>
+
       <Image src={item.img} />
       <Info>
         <Title>{item.title}</Title>

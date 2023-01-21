@@ -1,10 +1,10 @@
 import RemoveTwoToneIcon from '@mui/icons-material/RemoveTwoTone';
 import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
 import styled from "styled-components";
-import Announcement from "../components/Announcement";
+
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Newsletter from "../components/Newsletter";
+
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -120,7 +120,6 @@ const Product = () => {
   return (
     <Container>
       <Navbar />
-      <Announcement />
       <Wrapper>
         <ImgContainer>
           <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
@@ -163,7 +162,6 @@ const Product = () => {
           </AddContainer>
         </InfoContainer>
       </Wrapper>
-      <Newsletter />
       <Footer />
     </Container>
   );

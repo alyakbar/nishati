@@ -2,13 +2,19 @@
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBagTwoToneIcon from '@mui/icons-material/ShoppingBagTwoTone';
+
 
 const Container = styled.div`
   height: 60px;
+  margin-bottom:30px;
+  background-color: #E8FADD;
   ${mobile({ height: "50px" })}
 `;
 
 const Wrapper = styled.div`
+
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -38,12 +44,16 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
+  background-color: #E8FADD;
   ${mobile({ width: "50px" })}
 `;
 
 const Center = styled.div`
+
   flex: 1;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `;
 
 const Logo = styled.h1`
@@ -65,23 +75,42 @@ const MenuItem = styled.div`
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
+const list = styled.div` 
+margin: 0px 30px;
+align-self: center;
+justify-content: center;
+}
+
+`;
+const Button = styled.button`
+
+    padding: 10px;
+    background-color: #E8FADD;
+    cursor: pointer;
+    font-weight: 600;
+`;
+
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
-          <SearchContainer>
-            <Input placeholder="Search" />
-
-          </SearchContainer>
+           <Logo>Nishati</Logo>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <list>
+          <Language> Home</Language>
+          </list>
+          <list>
+          <SearchContainer>
+            <Input placeholder="Search" />
+            <SearchIcon/>
+          </SearchContainer>  
+          </list>       
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem><Button>Connect + </Button></MenuItem>
+          <MenuItem> <ShoppingBagTwoToneIcon /></MenuItem>
           <MenuItem>
 
           </MenuItem>
