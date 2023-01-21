@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import SearchIcon from '@mui/icons-material/Search';
-import ShoppingBagTwoToneIcon from '@mui/icons-material/ShoppingBagTwoTone';
+
 
 
 const Container = styled.div`
@@ -110,7 +110,7 @@ const Navbar = () => {
         </Center>
         <Right>
           <MenuItem><Button>Connect + </Button></MenuItem>
-          <MenuItem> <ShoppingBagTwoToneIcon /></MenuItem>
+
           <MenuItem>
 
           </MenuItem>
